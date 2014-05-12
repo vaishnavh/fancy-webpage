@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<title>One Page Scroll</title>
+		<title>Vaishnavh Nagarajan</title>
 
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
 		<script type="text/javascript" src="js/jquery.onepage-scroll.js"></script>
@@ -10,7 +10,7 @@
 		  <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
 
 	 <style>
-    html {
+      html {
       height: 100%;
     }
     body {
@@ -30,7 +30,6 @@
     	margin: 0 auto; 
     	overflow: hidden;
     }
-    
     a {
       text-decoration: none;
     }
@@ -44,10 +43,11 @@
     
     h1, h2 {
       width: 100%;
+	  
       float: left;
     }
     h1 {
-      margin-top: 100px;
+      margin-top: 13px;
       color: #000;
       margin-bottom: 5px;
       font-size: 70px;
@@ -67,52 +67,23 @@
       text-shadow: 0 2px 8px rgba(0, 0, 0, 0.75);
       padding: 3px 10px;
     }
+	
     h2 {
       color: #6D461D;
       font-weight: 100;
       margin-top: 0;
       margin-bottom: 10px;
-    }
+    }    
     
-    .pointer {
-      color: #9b59b6;
-      font-family: 'Pacifico', cursive;
-      font-size: 30px;
-      margin-top: 15px;
-    }
-    code {
-      margin: 20px 1%;
-      float: left;
-      width: 48%;
-      height: 105px;
-      background: rgba(0,0,0,0.1);
-      border: rgba(0,0,0,0.05) 5px solid;
-      border-radius: 5px;
-      padding:5px;
-      color: white;
-      text-align: center;
-      font-size: 15px;
-      margin-top: 25px;
-      display: block;
-      box-sizing: border-box;
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-    }
-    code.html {
-      color: #7EC9E6;
-    }
-    code.js {
-      color: #FFAD00;
-    }
-
     .main {
       float: left;
       width: 100%;
+	  height: 100%;
+	  max-width: 100%;
       margin: 0 auto;
     }
     
     .main h1 {
-      padding:150px 50px;
       float: left;
       width: 100%;
       font-size: 45px;
@@ -123,216 +94,107 @@
       color: white;
       margin: 0;
     }
-   
-    .main h1.demo1 {
-      background: #1ABC9C;
-    }
-    
-    .reload.bell {
-      font-size: 12px;
-      padding: 20px;
-      width: 45px;
-      text-align: center;
-      height: 47px;
-      border-radius: 50px;
-      -webkit-border-radius: 50px;
-      -moz-border-radius: 50px;
-    }
-    
-    .reload.bell #notification {
-      font-size: 25px;
-      line-height: 140%;
-    }
-    
-    .reload, .btn{
-      display: inline-block;
-      border: 4px solid #A2261E;
-      border-radius: 5px;
-      -moz-border-radius: 5px;
-      -webkit-border-radius: 5px;
-      background: #CC3126;
-      display: inline-block;
-      line-height: 100%;
-      padding: 0.7em;
-      text-decoration: none;
-      color: #fff;
-      width: 100px;
-      line-height: 140%;
-      font-size: 17px;
-      font-family: open sans;
-      font-weight: bold;
-    }
-    .reload:hover{
-      background: #444;
-    }
-    .btn {
-      width: 200px;
-      color: rgb(255, 255, 255);
-      border: 4px solid rgb(0, 0, 0);
-      background: rgba(3, 3, 3, 0.75);
-    }
-    .clear {
-      width: auto;
-    }
-    .btn:hover, .btn:hover {
-      background: #444;
-    }
-    .btns {
-      width: 410px;
-      margin: 50px auto;
-    }
-    .credit {
-      text-align: center;
-      color: rgba(0,0,0,0.5);
-      padding: 10px;
-      width: 410px;
-      clear: both;
-    }
-    .credit a {
-      color: rgba(0,0,0,0.85);
-      text-decoration: none;
-      font-weight: bold;
-      text-align: center;
-    }
-    
-    .back {
-      position: absolute;
-      top: 0;
-      left: 0;
-      text-align: center;
-      display: block;
-      padding: 7px;
-      width: 100%;
-      box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      -webkit-box-sizing: border-box;
-      background: rgba(255, 255, 255, 0.25);
-      font-weight: bold;
-      font-size: 13px;
-      color: #000;
-      -webkit-transition: all 500ms ease-in-out;
-      -moz-transition: all 500ms ease-in-out;
-      -o-transition: all 500ms ease-in-out;
-      transition: all 500ms ease-in-out;
-    }
-    .back:hover {
-      color: black;
-      background: rgba(255, 255, 255, 0.5);
-    }
-    
-    header {
-      position: relative;
-      z-index: 10;
-    }
+
     .main section .page_container {
-      position: relative;
-      top: 25%;
-      margin: 0 auto 0;
-      max-width: 950px;
-      z-index: 3;
+      position: absolute;
+	  height: 100%;
+	  width: 400px;
+	  max-width: 100%;
     }
-	.main section .page_container_2 {
-      position: relative;
-      top: 25%;
-      margin: 0 auto 0;
-      max-width: 950px;
-      z-index: 3;
-    }
+
     .main section  {
       overflow: hidden;
+	  height: 100%;
     }
     
-    .main section > img {
-      position: absolute;
-      max-width: 100%;
-      z-index: 1;
-    }
+   
     
-	.main section.page1 > img {
-   `  position: absolute;
-      top: 165px;
-      right: 60%;
-	  height: 250px;
+	.main section.page1 {
+	 position: relative;
+      background:rgb(230, 217, 200);
+	  width: 100%;
+	  max-width: 100%;
+    }
+	
+	.main section.page1 .page_container {
+	  position: absolute;
+	  width: 50%;
+	  height: 100%;
     }
    
-    .main section.page1 {
-      background:rgb(230, 217, 200);
-    }
-    .main section.page1 h1 {
+    
+    .main section.page1 .page_container > h1 {
+	  position: absolute;
+	  top: 30%;
+	  height: 10%;
+	  max-height: 10%;
       text-align: left;
       padding: 0;
       margin-bottom: 15px;
       font-size: 70px;
       color: black;
     }
+	
     .main section.page1 h2 {
+	  position: relative;
+	  top: 44%;
       color: rgba(0,0,0,0.85);
       text-align: left;
-      width: 500px;/*435px;*/
+      width: 500px;
       line-height: 160%;
     }
-	.main section.page1 .page_container {
-      margin-left: 600px;
-      overflow: hidden;
-    }
-    .main section .page_container .btns {
-      clear: both;
-      float: left;
-      text-align: center;
-      width: 435px;
-    }
-    .main section .page_container .btns a{
-      text-align: center;
+
+	
+	
+	.main section.page1 .page_container > img {
+      position: relative;
+	  left: 15%;
+	  top: 30%;
+	  width: 65%;
     }
 	
-	.main section .page_container a{
-      text-decoration: none;
-    }
+    
     .main section.page2 {
+	  position: relative;
       background: #555557;
     }
-    .main section.page2 > img {
-   `   position: absolute;
-      top: 100px;
-      left: 50%;
-      margin-left: -1095px;
+    
+	
+	.main section.page2 .page_container {
+	  position: absolute;
+	  width: 50%;
+	  height: 100%;
     }
    
-   .main section.page2 .page_container {
-	  margin-left: -10px;
-      margin-top: -205px;
-      overflow: hidden;
-    }
    
-   .main section.page2 > iframe {
-      position: absolute;
-      top: 15px;
-      left: 50%;
-	  overflow: hidden;
-	  width: 600px;
-	  float: center
-	  height: 700px;
+ 
+   
+   .main section.page2 .page_container > iframe {
+      position: relative;
+	  top: 2.5%;
+	   width: 95%;
+	   right: 10%;
+	   height: 95%;
     }
-    .main section.page2 h1 {
+    .main section.page2 .page_container > h1 {
 	  text-align: right;
-	  margin-left: 40px;
-	  width: 650px;
-	  margin-top: 200px;
-	  padding-bottom: 0px;
+	  position: absolute;
+	  top: 40%;
+	  right: 20%;
       font-size: 40px;
 	  font-weight: 20px;
       letter-spacing: -1px;
       color: white;
     }
-    .main section.page2 h2 {
+    .main section.page2 .page_container >  h2 {
       color: rgba(255,255,255,0.85);
-	  margin-top: 10px;
-	  margin-left: 40px;
+	  position: absolute;
+	  right: 20%;
+	  top: 50%;
       text-align: right;
       line-height: 160%;
       font-weight: 25px;
 	  font-size: 20px;
-	  width: 600px;
     }
     .viewing-page-2 .back{
       background: rgba(0, 0, 0, 0.25);
@@ -342,31 +204,31 @@
       background:url(tilted-phone.png) no-repeat 156px -150px ;
     }
    
+	
 	.main section.page3 .page_container {
-      overflow: hidden;
-      width: 500px;
-      /*right: -285px;*/
-	  margin-right: 100px;
-	  float: right;
+	  position: absolute;
+	  width: 50%;
+	  height: 100%;
     }
 	
-	.main section.page3 .page_container_2 {
-      overflow: hidden;
-      width: 500px;
-	  margin-left: 100px;
-	  float: left;
-    }
 	
-    .main section.page3 h1 {
+	
+    .main section.page3 .page_container > h1 {
+	
+	  
+	  position:relative;
       text-align: left;
-      padding: 0;
+	  left: 20%;
       margin-bottom: 0;
       font-size: 70px;
       letter-spacing: -1px;
       color: black;
     }
-    .main section.page3 h2 {
+    .main section.page3 .page_container > h2 {
+	position:relative;
       color: rgba(0,0,0,0.85);
+	  	  left: 20%;
+
       text-align: left;
       line-height: 160%;
       font-weight: 100;
@@ -396,7 +258,7 @@
     }
     
     body.disabled-onepage-scroll .main section.page1 > img {
-      position: absolute;
+      position: relative;
       width: 80%;
       left: 10%;
     }
@@ -436,25 +298,33 @@
 	<body>
 		<div class = "wrapper">
 			<div class="main">
+
 				<section class="page1">
-				<img src = "me.png"></img>
-					<div class="page_container">
+					<div class="page_container" style="float: left">
+						<img src="me.png"></img>
+
+					</div>
+					
+					<div class="page_container" style="margin-left: 52%">
 					<h1>Hello World!</h1>		
 					<h2>I'm a fourth year <a href="http://www.cse.iitm.ac.in">CS undergrad</a> at <a href="http://www.iitm.ac.in" style="text-decoration:none">IIT Madras</a>. <br>
 					Please call me Vaishnavh. <br>This is how I look. <br>  </h2>
 					</div>
 				</section>
 				<section class="page2">
-					<div class="page_container">
+					<div class="page_container" style="float: left">
 					<h1>If that was not enough,</h1>	
 					<h2>here's a timeline of fascinating things I've come across.<br> Do you find me interesting?<br> P.M. me!
 					
 					</div>
+					
+					<div class="page_container" style="margin-left: 52%">
 					<iframe src='http://cdn.knightlab.com/libs/timeline/latest/embed/index.html?source=0AgTnDPsW3UgbdDhWMlgzZXVsME9pU1FTOGNqTnBNT1E&font=AbrilFatface-Average&maptype=toner&lang=en&height=650' width='100%' height='650' frameborder='0'></iframe>
+					</div>
 				</section>
 				
-				<section class="page3">
-					<div class="page_container_2">
+				<section class="page3" style="top: 30%">
+					<div class="page_container" style="float: left">
 					<h1>To talk,</h1>
 					<h2>spam me here: 
 					<script>
@@ -542,8 +412,7 @@ document.write("<a href='"+link+"'>FB</a>")
 
 					</h2>
 					</div>
-					
-					<div class="page_container">
+					<div class="page_container" style="margin-left: 40%">
 					<h1>To stalk,</h1>
 					<h2>there's <a href="http://www.quora.com/Vaishnavh-Nagarajan">Quora</a>, 
 					<a href="http://stackexchange.com/users/1868073/enigman?tab=top">Stack Exchange</a>, 
